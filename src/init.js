@@ -19,7 +19,7 @@ async function buscandoEternamente (){
     let pvprank = {}
     fs.readFile('./data/pvprank.json', (err, data) => {
         if (err) throw err;
-        
+
         pvprank = JSON.parse(data);
         
         console.log("atualizando dados de rank com dados da api poring world");
@@ -49,7 +49,9 @@ async function buscandoEternamente (){
                 pvprank[ rankPerson.charid ]['situation'] =  pvprank[ rankPerson.charid ]['rank'] > rankPerson.rank ? "down" : pvprank[ rankPerson.charid ]['rank'] < rankPerson.rank ? "up" : "same";
                 pvprank[ rankPerson.charid ]['rank'] = rankPerson.rank;
                 pvprank[ rankPerson.charid ]['score'] = rankPerson.score;
-                pvprank[ rankPerson.charid ]['history'].push( {rank: rankPerson.rank, score: rankPerson.score, timestamp: timeNow } );
+                if( pvprank[ rankPerson.charid ].score != rankPerson.score ){
+                    pvprank[ rankPerson.charid ]['history'].push( {rank: rankPerson.rank, score: rankPerson.score, timestamp: timeNow } );
+                }
             }
         }
     
