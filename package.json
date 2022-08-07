@@ -1,0 +1,12 @@
+{
+  "name": "pvp_ragnarok",
+  "version": "1.0.0",
+  "description": "Interage com a API do poring word e obtem informações",
+  "main": "index.js",
+  "repository": "git@github.com:worldvini/pvp_ragnarok.git",
+  "author": "Vinicius da Silva Fleury",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}

@@ -1,0 +1,63 @@
+.tabela_rank{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabela_rank__person {
+    display: flex;
+    background-color: rgba(90,90,90, 0.1);
+    border-bottom: 2px solid rgba(90,90,90, 0.5);
+    border-right: 1px solid rgba(90,90,90, 0.7);
+    margin: 5px;
+    padding: 8px;
+}
+
+.tabela_rank__person__table tr th,
+.tabela_rank__person__table tr td{
+    width: 80px;
+    text-align: center;
+}
+
+.tabela_rank__person_history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabela_rank__person_history p {
+    border: 1px solid #000;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: rgba(255,255,255, 0.5);
+    color: #000;
+}
+
+.tabela_rank__person_history .date{
+    padding: 15px;
+}
+
+.tabela_rank__person_history .info{
+    padding: 5px;
+    border: 1px solid #000000;
+}
+
+.tabela_rank__person_history__diario{ 
+    display: none;
+}
+
+.botao_historico{
+    cursor: pointer;
+}
+
+.background_red{
+    background-color: #fcd7d7;
+}
+
+.background_blue{
+    background-color: #ccf1ff;
+}
+
+.background_green{
+    background-color: #b0f7bf;
+}
+
